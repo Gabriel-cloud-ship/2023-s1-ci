@@ -68,6 +68,7 @@ def test_8_chars_with_no_upper_case_password_should_raise_exception():
         # when
         validator.password_validate()
 
+
 def test_8_chars_with_invalid_especial_slash_character_should_raise_exception():
     # given
     validor = PasswordValidator(content="C@ab/@a1")
@@ -75,12 +76,14 @@ def test_8_chars_with_invalid_especial_slash_character_should_raise_exception():
         # when
         validor.password_validate()
 
+
 def test_8_chars_with_invalid_especial_circumflex_character_should_raise_exception():
     # given
     validor = PasswordValidator(content="C@ab^@a1")
     with pytest.raises(Exception): # then
         # when
         validor.password_validate()
+
 
 def test_8_chars_with_invalid_especial_tilde_character_should_raise_exception():
     # given
