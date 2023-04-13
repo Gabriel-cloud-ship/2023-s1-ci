@@ -3,9 +3,9 @@ from typing import List, Optional
 from pydantic import BaseModel
 
 from .string_validators import (
-    InvalidEspecialCaseValidator,
     DigitValidator,
     EspecialCharacterValidator,
+    InvalidEspecialCaseValidator,
     LengthValidator,
     LowerCaseValidator,
     UpperCaseValidator,
